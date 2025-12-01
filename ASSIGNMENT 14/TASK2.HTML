@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ENTER PORTAL NAME HERE] - Home</title>
+    
+    <style>
+        /* BASE STYLES & RESET */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f2f5; 
+            color: #333; 
+        }
+
+        /* 1. HEADER STYLING */
+        header { 
+            background-color: #0056b3; /* Primary Blue */
+            color: white; 
+            padding: 30px 0; 
+            text-align: center; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        h1 { 
+            margin: 0; 
+            font-size: 2.2em; 
+        }
+
+        /* 2. RESPONSIVE NAVIGATION BAR STYLING */
+        nav { 
+            background-color: #333; /* Dark background */
+        }
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+            margin: 0; 
+            display: flex; /* Use Flexbox for horizontal layout */
+            justify-content: center; /* Center the links */
+        }
+        nav ul li a { 
+            display: block; 
+            color: white; 
+            text-align: center; 
+            padding: 15px 20px; 
+            text-decoration: none; 
+            transition: background-color 0.3s; 
+        }
+        nav ul li a:hover { 
+            background-color: #004494; /* Darker blue on hover */
+        }
+
+        /* Media Query for Responsiveness (Small screens, e.g., mobile) */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column; /* Stack links vertically */
+                align-items: stretch; /* Make links full width */
+            }
+            nav ul li a {
+                border-bottom: 1px solid #575757;
+            }
+        }
+
+        /* 3. CENTERED CONTENT SECTION STYLING */
+        main { 
+            padding: 20px; 
+            min-height: 60vh; 
+            max-width: 1000px; /* Max width for readability */
+            margin: 30px auto; /* Centers the block element horizontally */
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+
+        h2, h3 { 
+            color: #0056b3; 
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        main ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        /* 4. FOOTER STYLING */
+        footer { 
+            background-color: #e0e0e0; /* Light Gray Background */
+            color: #333; /* Dark text for contrast */
+            text-align: center; 
+            padding: 15px 0; 
+            margin-top: 40px; 
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[STUDENT PORTAL]</h1>
+        <p>Your centralized source for academic information.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"> Dashboard</div></a></li>
+            <li><a href="#"> Courses</a></li>
+            <li><a href="#"> Grades</a></li>
+            <li><a href="#">Financial Aid</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome Student!</h2>
+        <p>This styled page now features a **centered content layout** and a responsive menu. Try resizing your browser window to see the navigation links stack vertically on small screens!</p>
+        
+        <h3>Portal Announcements</h3>
+        <ul>
+            <li>New course DASHBOARD section for recent grade updates.</li>
+            <li>System maintenance scheduled for next Saturday.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; [**ENTER COPYRIGHT YEAR**] [**ENTER PORTAL NAME HERE**]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
